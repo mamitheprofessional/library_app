@@ -1,0 +1,135 @@
+Karabibik:
+Yazar: Nabizade Nazım
+ISBN: 9944-997-10-2
+Yayınevi: 3F Yayınevi
+Yıl: 2006
+Dil: Türkçe
+Tür: Roman
+Sayfa Sayısı: 85
+
+Yüz Karası:
+Yazar: Orhan Kemal
+ISBN: 978-975-289-863-9
+Yayınevi: Everest
+Yıl: 2011
+Dil: Türkçe
+Tür: Roman
+Sayfa Sayısı: 101
+
+Çelebi:
+Yazar: Uğur Becerikli
+ISBN: 978-9944-298-00-1
+Yayınevi: Destek
+Yıl: 2007
+Dil: Türkçe
+Tür: Roman
+Sayfa Sayısı: 270
+
+Dağ Çağrısı:
+Yazar: Mücahit Koca
+ISBN: 975-96959-0-1
+Yayınevi: Sur Yayınları
+Yıl: 1999
+Dil: Türkçe
+Tür: Şiir
+Sayfa Sayısı: 79
+
+Parmaklarımın Ucundan:
+Yazar: Asu Özbilen
+ISBN: 978-605-127-539-0
+Yayınevi: Cinius Yayınları
+Yıl: 2012
+Dil: Türkçe
+Tür: Şiir
+Sayfa Sayısı: 65
+
+Mahcup Denizler:
+Yazar: H.İhsan Sönmez
+ISBN: 978-605-4447-17-6
+Yayınevi: Ferfir
+Yıl: 2011
+Dil: Türkçe
+Tür: Öykü
+Sayfa Sayısı: 104
+
+Çıplak Ayaklıydı Gece:
+Yazar: Ahmet Ümit
+ISBN: 978-975-289-746-5
+Yayınevi: Doğan Kitap
+Yıl: 2012
+Dil: Türkçe
+Tür: Öykü
+Sayfa Sayısı: 160
+
+Acı Deniz:
+Yazar: Fatma Barbarosoğlu
+ISBN: 978-975-355-191-5
+Yayınevi: İz
+Yıl: 2011
+Dil: Türkçe
+Tür: Öykü
+Sayfa Sayısı: 128
+
+Geniş Zamanlar:
+Yazar: Ayşe Kulin
+ISBN: 975-14-0631-5
+Yayınevi: Remzi Kitabevi
+Yıl: 1999
+Dil: Türkçe
+Tür: Öykü
+Sayfa Sayısı: 133
+
+Web Tasarım Temelleri:
+Yazar: Musa Çiçek
+ISBN: 978-605-4205-54-7
+Yayınevi: Kodlab
+Yıl: 2014
+Dil: Türkçe
+Tür: Bilgisayar
+Sayfa Sayısı: 488
+
+Kompozit Malzemelere Giriş:
+Yazar: Yusuf Şahin
+ISBN: 975-7313-73-4
+Yayınevi: Gazi
+Yıl: 2000
+Dil: Türkçe
+Tür: Ders Kitabı
+Sayfa Sayısı: 327
+
+Water-resources Engineering:
+Yazar: David A. Chain
+ISBN: 978-0-273-78591-0
+Yayınevi: Pearson Education
+Yıl: 2013
+Dil: İngilizce
+Tür: Mühendislik
+Sayfa Sayısı: 939
+
+Efsane Güzeller:
+Yazar: İskender Pala
+ISBN: 975-8950-15-0
+Yayınevi: Kapı Yayınları
+Yıl: 2006
+Dil: Türkçe
+Tür: Deneme
+Sayfa Sayısı: 283
+
+Hayat Güzeldir:
+Yazar: İclal Aydın
+ISBN: 975-331-343-8
+Yayınevi: Epsilon
+Yıl: 2002
+Dil: Türkçe
+Tür: Deneme
+Sayfa Sayısı: 210
+
+Şiir ve Cinayet:
+Yazar: Salah Birsel
+ISBN: 978-975-570-592-7
+Yayınevi: Sel
+Yıl: 2012
+Dil: Türkçe
+Tür: Deneme
+Sayfa Sayısı: 135
+
