@@ -1,0 +1,5 @@
+isim=geralt
+soyisim=witcher
+tel=12345678901
+şifre=yennefer
+

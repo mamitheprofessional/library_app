@@ -1,0 +1,4 @@
+isim=öğrenci
+soyisim=öğrencioğlu
+tc=11111111111
+

@@ -1,0 +1,5 @@
+isim=johnny
+soyisim=silverhand
+tel=55555555555
+şifre=samurai
+
