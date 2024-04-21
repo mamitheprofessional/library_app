@@ -881,11 +881,21 @@ def kontrol_et_admin():
     # Girilen ad ve şifre yönetici bilgileriyle eşleşiyorsa butonu aktif et
     if girilen_ad == gorevli_isim and girilen_sifre == gorevli_sifre:
         button_admin.config(state="normal")  # Butonu aktif yap
-        buton_label2.config(text="Hoşgeldin " + girilen_ad)  # Etiket metnini değiştir
-        buton_label2.place(x=60,y=300)
-        admin_giris()
+        if robot_secili_deger.get()==1:
+            messagebox.showinfo("merhaba",f"hoşgeldin " + girilen_ad)
+            admin_giris()
+        else:
+            messagebox.showwarning("robot kontrol",f"tik'i seçmeyi unutmayın")
+    elif robot_secili_deger.get() == 0:
+        messagebox.showwarning("robot kontrol",f"tik'i seçmeyi unutmayın")
+        robotmuymus=tk.Checkbutton(admin_frame, text="Ben robot değilim",variable=robot_secili_deger, fg="#7D0000")
+        robotmuymus.place(x=45,y=210)
+
+
+
     else:
         buton_label2.config(text="Giriş Başarısız")  # Etiket metnini değiştir
+        buton_label2.place(x=105,y=330)
 
 
 
@@ -1073,14 +1083,20 @@ sifre_giris.place(x=30,y=160)
 
 #admin giriş butonu
 button_admin = tk.Button(admin_frame, text="Admin Girişi",image=admin_logo, command=admin_giris)
-button_admin.place(x=80,y=220)
+button_admin.place(x=80,y=250)
 buton_label2=tk.Label(admin_frame,text="Giriş")
-buton_label2.place(x=105,y=300)
+buton_label2.place(x=105,y=330)
 
 # Butonun komutunu kontrol_et fonksiyonu ile değiştir
 button_admin.config(command=kontrol_et_admin)
 
+#robotlar_giremez=tk.Label("ben robot değilim")
+#robotlar_giremez.pack()
 
+robot_secili_deger=tk.IntVar()
+
+robotmuymus=tk.Checkbutton(admin_frame, text="Ben robot değilim",variable=robot_secili_deger, bg="#8D8E8E")
+robotmuymus.place(x=45,y=210)
 
 
 
