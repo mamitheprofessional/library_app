@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
+import webbrowser
+
 
 
 kutuphane_kitaplari={}
@@ -918,13 +920,22 @@ def kontrol_et_gorevli():
         print("Giriş başarılı")  # Şart sağlandığında bu çıktıyı görmeli
         button_admin.config(state="normal")  # Butonu aktif yap
         buton_label2.config(text="Giriş Başarılı")  # Etiket metnini değiştir
-        gorevli_giris()
+        if robot_secili_deger.get()==1:
+            messagebox.showinfo("merhaba",f"hoşgeldin " + girilen_ad)
+            gorevli_giris()
+        else:
+            messagebox.showwarning("robot kontrol",f"tik'i seçmeyi unutmayın")
+    elif robot_secili_deger.get() == 0:
+        messagebox.showwarning("robot kontrol",f"tik'i seçmeyi unutmayın")
+        robotmuymus=tk.Checkbutton(gorevli_frame, text="Ben robot değilim",variable=robot_secili_deger, fg="#7D0000")
+        robotmuymus.place(x=45,y=210)
     else:
         print("Giriş başarısız")  # Şart sağlanmadığında bu çıktıyı görmeli
         buton_label2.config(text="Giriş Başarısız")  # Etiket metnini değiştir
 
 
-
+def link_ac():
+    webbrowser.open("https://kutuphane.bakircay.edu.tr/")
 
 
 pencere = tk.Tk()
@@ -947,8 +958,8 @@ stil.theme_use("yeni_tema")
 
 # Arka plan resimleri
 arka_plan_resmi = tk.PhotoImage(file="bakircay_logo2.png")
-
-
+kutuphane_resmi = Image.open("kütüphane_fotosu.jpg")
+kutuphane_arka_plan = ImageTk.PhotoImage(kutuphane_resmi)
 
 
 kitap_ara_buton = Image.open("kitap_ara.png")
@@ -1015,6 +1026,8 @@ oneri_logo = ImageTk.PhotoImage(oneri_logo)
 notebook = ttk.Notebook(pencere)
 notebook.place(x=10, y=10, width=650, height=500)
 
+
+
 # Öğrenci Giriş Sekmesi
 ogrenci_frame = tk.Frame(notebook)
 notebook.add(ogrenci_frame, text="Öğrenci Giriş")
@@ -1051,9 +1064,9 @@ gorevli_sifre_giris.place(x=30,y=160)
 
 
 button_gorevli = tk.Button(gorevli_frame, text="Görevli Girişi",image=personel_logo, command=gorevli_giris)
-button_gorevli.place(x=80,y=220)
+button_gorevli.place(x=80,y=250)
 buton_label1=tk.Label(gorevli_frame,text="Giriş")
-buton_label1.place(x=105,y=300)
+buton_label1.place(x=105,y=330)
 
 # Butonun komutunu kontrol_et fonksiyonu ile değiştir
 button_gorevli.config(command=kontrol_et_gorevli)
@@ -1067,7 +1080,6 @@ notebook.add(admin_frame, text="Admin Giriş")
 # Admin frame arka planı
 admin_arka_plan = tk.Label(admin_frame, image=arka_plan_resmi, bg="#303030")
 admin_arka_plan.place(x=0, y=0, relwidth=1, relheight=1)
-
 
 
 admin_ad_sor = tk.Label(admin_frame, text="Ad:", bg="#8D8E8E")
@@ -1090,13 +1102,29 @@ buton_label2.place(x=105,y=330)
 # Butonun komutunu kontrol_et fonksiyonu ile değiştir
 button_admin.config(command=kontrol_et_admin)
 
-#robotlar_giremez=tk.Label("ben robot değilim")
-#robotlar_giremez.pack()
+
+# Yeni eklenenler
 
 robot_secili_deger=tk.IntVar()
 
 robotmuymus=tk.Checkbutton(admin_frame, text="Ben robot değilim",variable=robot_secili_deger, bg="#8D8E8E")
 robotmuymus.place(x=45,y=210)
+robotmuymus=tk.Checkbutton(gorevli_frame, text="Ben robot değilim",variable=robot_secili_deger, bg="#8D8E8E")
+robotmuymus.place(x=45,y=210)
+
+
+# Link ekliyoruz
+web_frame = tk.Frame(notebook)
+notebook.add(web_frame, text="web sitemiz")
+
+kutuphane_gorseli = tk.Label(web_frame, image=kutuphane_arka_plan)
+kutuphane_gorseli.place(x=0, y=0, relwidth=1, relheight=1)
+
+link_butonu = tk.Button(web_frame, text="web sitemiz", fg="blue", cursor="hand2", command=link_ac)
+link_butonu.place(relx=0.5, rely=0.5, anchor="center")
+
+# Etikete tıklanırsa link_ac fonksiyonunu çağırın
+link_butonu.bind("<Button-1>", lambda e: link_ac())
 
 
 
