@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ana_dosya.py
+Exec=/home/noctt137/Masaüstü/noctt137/kütüphane/library_app/yeniler/kutuphane_bakircay/library_app/ana_dosya.py
+Icon=/home/noctt137/Masaüstü/noctt137/kütüphane/library_app/yeniler/kutuphane_bakircay/library_app/bakircay_logo2.png
+

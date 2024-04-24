@@ -3,7 +3,7 @@ from tkinter import ttk, messagebox
 from PIL import Image, ImageTk
 import webbrowser
 
-
+#220601159 muhammet polat
 
 kutuphane_kitaplari={}
 
@@ -149,7 +149,7 @@ def kitap_silme_penceresi():
         kitap_adi = silmeye_giris.get()
         found = False
 
-        # dosyayı oku kullanıcının yazdığı kitabı sil
+        # Dosyayı oku ve kitap adı ile eşleşen satırları sil
         with open("kutuphane_kitap_listesi.txt", "r") as dosya:
             lines = dosya.readlines()
         with open("kutuphane_kitap_listesi.txt", "w") as dosya:
@@ -161,7 +161,7 @@ def kitap_silme_penceresi():
 
         if found:
             sonuc_penceresi(f"{kitap_adi} kitabı başarıyla silindi.")
-            sil_pencere.destroy() #pencereyi kapat
+            sil_pencere.destroy() # Pencereyi kapat
         else:
             sonuc_penceresi(f"{kitap_adi} kitabı bulunamadı.")
 
@@ -176,6 +176,7 @@ def kitap_silme_penceresi():
 
     silme_buton = tk.Button(sil_pencere, text="Sil", command=kitap_silme_buton_tikla)
     silme_buton.pack()
+
 
 
 def txt_dosyayi_ac():

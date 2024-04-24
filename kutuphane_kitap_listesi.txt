@@ -1,4 +1,12 @@
-Karabibik:
+Karabibik
+Yazar: ben
+ISBN: 123
+Yayınevi: yayıncıevi
+Yıl: 2077
+Sayfa Sayısı: 100
+Dil: azerice
+Tür: okumalık
+
 Yazar: Nabizade Nazım
 ISBN: 9944-997-10-2
 Yayınevi: 3F Yayınevi
